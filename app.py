@@ -6,10 +6,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return "<h1>Hello <b>Heroku + Flask</b>!</h1>"
 
 
 
 
-
-if __name__ == '__main__': app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
